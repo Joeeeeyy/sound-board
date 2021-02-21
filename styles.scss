@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Truculenta:wght@100;200;300;400;500;600;700&display=swap');
+
+$primary-font: 'Truculenta', sans-serif;
+$signature: 'Long Cang', sans-serif;
+$bg-color: #1e272e;
+$container: #BDC581;
+$buttons: #2f3640;
+
+body {
+    box-sizing: border-box;
+    background-color: $bg-color;
+    margin: 1.875rem;
+    display: block;
+    .wrapper {
+        background-color: $container;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.875rem;
+        justify-content: center;
+        align-items: center;
+        width: 31.25rem;
+        margin: 0 auto;
+        border: 5px solid black;
+        border-radius: 10px;
+    }
+    #display{
+        font-size: 100px;
+        text-shadow: 1px 1px 8px #000000, 1px 1px 10px #b8e994;;
+        text-align: center; 
+    }
+    .container {
+        flex: 1 1 50%;
+        display: flex;
+        max-width: 31.25rem;
+        .sound-pad {
+            flex: 1;
+            border: 5px solid black;
+            border-radius: 5px;
+            min-width: 150px;
+            background-color: $buttons;
+            padding: 40px;
+            margin: 5px;
+            font-family: $primary-font;
+            font-size: 1.875rem;
+            font-weight: 400;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 1px 5px #000000;
+            height: 150px;
+            cursor: pointer;
+        }
+        .sound-pad::after {
+            content: '';
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 100%
+        }
+    }
+    .footer{
+        text-align: center;
+        .author {
+            font-family: $primary-font;
+            font-size: 25px;
+            font-weight: 200;
+            .sign {
+                font-family: $signature;
+                font-size: 32px;
+                text-align: bottom;
+                color: #b8e994;
+                text-shadow: -2px 1px 5px #000000;
+            }
+        }
+    }
+}
+

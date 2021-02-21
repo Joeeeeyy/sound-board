@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&family=Truculenta:wght@100;200;300;400;500;600;700&display=swap");
+body {
+  box-sizing: border-box;
+  background-color: #1e272e;
+  margin: 1.875rem;
+  display: block;
+}
+body .wrapper {
+  background-color: #BDC581;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.875rem;
+  justify-content: center;
+  align-items: center;
+  width: 31.25rem;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+body #display {
+  font-size: 100px;
+  text-shadow: 1px 1px 8px #000000, 1px 1px 10px #b8e994;
+  text-align: center;
+}
+body .container {
+  flex: 1 1 50%;
+  display: flex;
+  max-width: 31.25rem;
+}
+body .container .sound-pad {
+  flex: 1;
+  border: 5px solid black;
+  border-radius: 5px;
+  min-width: 150px;
+  background-color: #2f3640;
+  padding: 40px;
+  margin: 5px;
+  font-family: "Truculenta", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 1px 5px #000000;
+  height: 150px;
+  cursor: pointer;
+}
+body .container .sound-pad::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 100%;
+}
+body .footer {
+  text-align: center;
+}
+body .footer .author {
+  font-family: "Truculenta", sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+}
+body .footer .author .sign {
+  font-family: "Long Cang", sans-serif;
+  font-size: 32px;
+  text-align: bottom;
+  color: #b8e994;
+  text-shadow: -2px 1px 5px #000000;
+}
+
+/*# sourceMappingURL=main.css.map */
