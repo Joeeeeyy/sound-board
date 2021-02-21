@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        function play(str) {
+            var audio = document.getElementById(str);
+            audio.play();
+        }
+        $('#shh').on("click", function(e) {
+            play('F');
+        });
+        $('#moan').on("click", function(e) {
+            play('G');
+        });
+        $('#fart').on("click", function(e) {
+            play('H');
+        });
+        $('#moo').on("click", function(e) {
+            play('J');
+        });
+
+        $(this).on("keydown", function(e) {
+            if (e.keyCode === 70) {
+                play('F');
+                $('#shh').fadeTo(100, 0.1).fadeTo(200, 1.0);
+            } else if (e.keyCode === 71) {
+                play('G');
+                $('#moan').fadeTo(100, 0.1).fadeTo(200, 1.0);
+            } else if (e.keyCode === 72) {
+                play('H');
+                $('#fart').fadeTo(100, 0.1).fadeTo(200, 1.0);
+            } else if (e.keyCode === 74) {
+                play('J');
+                $('#moo').fadeTo(100, 0.1).fadeTo(200, 1.0);
+            };
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper" id="drum-machine">
+        <div id="display">
+            <div class="top">
+                <button class="sound-pad" id="shh">SHH
+                    <audio src="https://www.fesliyanstudios.com/play-mp3/7053" preload="auto" class="clip" id="F"></audio>
+                </button>
+                <button class="sound-pad" id="moan">MOAN
+                    <audio src="https://www.soundfishing.eu/download.php?id=948" preload="auto" class="clip" id="G"></audio>
+                </button>
+            </div>
+            <div class="bottom">
+                <button class="sound-pad" id="fart">FART
+                    <audio src="https://www.fesliyanstudios.com/soundeffects-download.php?id=3606" preload="auto" class="clip" id="H"></audio>
+                </button>
+                <button class="sound-pad" id="fart">MOO
+                    <audio src="https://www.fesliyanstudios.com/play-mp3/6523" preload="auto" class="clip" id="J"></audio>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
