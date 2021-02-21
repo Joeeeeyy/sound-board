@@ -57,6 +57,7 @@ body .footer .author {
   font-family: "Truculenta", sans-serif;
   font-size: 25px;
   font-weight: 200;
+  color: #ffffff;
 }
 body .footer .author .sign {
   font-family: "Long Cang", sans-serif;
@@ -64,6 +65,30 @@ body .footer .author .sign {
   text-align: bottom;
   color: #b8e994;
   text-shadow: -2px 1px 5px #000000;
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    padding: 0;
+    margin: 45px 0px;
+  }
+
+  .wrapper {
+    display: block;
+    max-width: 310px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .sound-pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
