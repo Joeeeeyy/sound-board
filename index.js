@@ -19,6 +19,14 @@
         $('#display').text('🐮');
         play('J');
     });
+    $('#bark').on("click", function (e) {
+        $('#display').text('🐶');
+        play('D');
+    });
+    $('#lol').on("click", function (e) {
+        $('#display').text('🥸');
+        play('K');
+    });
     
     $(this).on("keydown", function (e) {
         if (e.keyCode === 70) {
@@ -29,14 +37,14 @@
             play('G');
             $('#moan').fadeTo(100, 0.1).fadeTo(200, 1.0);
             $('#display').text('👄');
-        } else if (e.keyCode === 72) {
-            play('H');
-            $('#fart').fadeTo(100, 0.1).fadeTo(200, 1.0);
-            $('#display').text('💩');
-        } else if (e.keyCode === 74) {
-            play('J');
-            $('#moo').fadeTo(100, 0.1).fadeTo(200, 1.0);
-            $('#display').text('🐮');
+        } else if (e.keyCode === 68) {
+            play('D');
+            $('#bark').fadeTo(100, 0.1).fadeTo(200, 1.0);
+            $('#display').text('🐶');
+        } else if (e.keyCode === 75) {
+            play('K');
+            $('#lol').fadeTo(100, 0.1).fadeTo(200, 1.0);
+            $('#display').text('🥸');
         };
     });
     
