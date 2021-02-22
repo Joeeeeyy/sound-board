@@ -59,7 +59,7 @@
              $('#display').text('🚶🏻‍♂️');
          } else if (e.keyCode === 76) {
              play('L');
-             $('#fuck-you').fadeTo(100, 0.1).fadeTo(200, 1.0);
+             $('#fuck').fadeTo(100, 0.1).fadeTo(200, 1.0);
              $('#display').text('🖕🏼');
          };
      });
