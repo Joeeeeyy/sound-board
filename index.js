@@ -27,13 +27,13 @@
          $('#display').text('🥸');
          play('K');
      });
-     $('#fat').on("click", function(e) {
-         $('#display').text('🚶🏻‍♂️');
-         play('S');
-     });
      $('#fuck').on("click", function(e) {
          $('#display').text('🖕🏼');
          play('L');
+        });
+     $('#fat').on("click", function(e) {
+         $('#display').text('🚶🏻‍♂️');
+         play('S');
      });
 
      $(this).on("keydown", function(e) {
@@ -53,14 +53,14 @@
              play('K');
              $('#lol').fadeTo(100, 0.1).fadeTo(200, 1.0);
              $('#display').text('🥸');
+            } else if (e.keyCode === 76) {
+                play('L');
+                $('#fuck').fadeTo(100, 0.1).fadeTo(200, 1.0);
+                $('#display').text('🖕🏼');
          } else if (e.keyCode === 83) {
              play('S');
              $('#fat').fadeTo(100, 0.1).fadeTo(200, 1.0);
              $('#display').text('🚶🏻‍♂️');
-         } else if (e.keyCode === 76) {
-             play('L');
-             $('#fuck').fadeTo(100, 0.1).fadeTo(200, 1.0);
-             $('#display').text('🖕🏼');
          };
      });
 
