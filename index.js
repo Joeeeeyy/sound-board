@@ -31,7 +31,7 @@
          $('#display').text('🚶🏻‍♂️');
          play('S');
      });
-     $('#fuck-you').on("click", function(e) {
+     $('#fuck').on("click", function(e) {
          $('#display').text('🖕🏼');
          play('L');
      });
